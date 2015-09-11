@@ -9,7 +9,7 @@
 public class Car
 {
     /** the fuel efficiency for the car measured in units of miles/gallon (mpg) */
-    private double fuleEfficiency;
+    private double fuelEfficiency;
     /**the amount of fuel in the tank of the car measured in units of gallons */
     private double fuelInTank;
     /**
@@ -30,8 +30,29 @@ public class Car
      */
     public void drive(double distance)
     {
-        // put your code here
-        return x+y;
+        fuelInTank -= distance / fuelEfficiency;
+
+    }
+    
+    /**
+     * Returns the number of gallons of gas in the car's tank.
+     *
+     * @return  the number of gallons of gas in the car's tank.
+     */
+    public double getGasInTank()
+    {
+        return fuelInTank;
+    }
+
+    /**
+     * Increments gas to the total gas in the car in units of gallons.
+     *
+     * @pre     gallonsOfGas must be postitive
+     * @param   gallonsOfGas   amount of gas being added to the car.
+     */
+    public void addGas(double gallonsOfGas)
+    {
+        fuelInTank+=gallonsOfGas;
     }
 
 }
