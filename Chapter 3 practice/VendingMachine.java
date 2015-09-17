@@ -8,8 +8,10 @@
  */
 public class VendingMachine
 {
-    /** number of tokens IN  the machine */
+    /** number of TOTAL tokens IN  the machine */
     private int tokens;
+    /**number of tokens that has not been credited*/
+    private int uncreditedTokens;
     /** number of cans IN  the machine */
     private int cans;
 
@@ -20,22 +22,61 @@ public class VendingMachine
     {
         this.cans=cans;
         this.tokens = 0;
+        this.uncreditedTokens=0;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * Adds cans to the total number of cans in the machine.
+     * @param    newCans    The number of cans being added to the vending machine.
      */
     public void fillUp(int newCans)
     {
         this.cans+=newCans;
     }
+    
+     /**
+     * Puts a singular token into the machine.
+     */
+    public void insertToken()
+    {
+        this.tokens+=1;
+        this.uncreditedTokens+=1;
+    }
+    
+    /**
+     * Takes one uncredited token and dispenses a can out of the machine.
+     * @pre The machine must have at least one uncredited token and at least one can in the machine
+     */
+    public void dispense()
+    {
+        this.uncreditedTokens-=1;
+        this.cans-=1;
+    }
 
+    /**
+     * Returns how many cans are in the machine.
+     * @return returns the number of cans in the machine.
+     */
+    public int getCans()
+    {
+        return this.cans;
+    }
+    
+     /**
+     * Returns how many tokens have not been taken for credit
+     * @return returns the number of tokens not credited but in the machine.
+     */
+    public int getUncreditedTokens()
+    {
+        return this.uncreditedTokens;
+    }
+    
+    /**
+     * returns the TOTAL number of tokens in the machine.
+     * @return returns the TOTAL number of tokens in the machine.
+     */
+    public int getTokens()
+    {
+        return this.tokens;
+    }
 }
