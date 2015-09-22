@@ -11,7 +11,7 @@ public class TargetViewer
     public static void main(String[] args)
     {
         JFrame frame= new JFrame();
-        frame.setSize(400,400);
+        frame.setSize(1600,1600);
         frame.setTitle("Targets!");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         TargetComponent component= new TargetComponent();
