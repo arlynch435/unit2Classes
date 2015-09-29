@@ -3,9 +3,16 @@ public class Annuity
 {
    public static void main(String[] args)
    {
-     double pmt=10000.0;
-     double interest=0.08;
-     double numPay=20.0;
+     Scanner s=new Scanner(System.in);
+     double pmt;
+     double interest;
+     double numPay;
+     System.out.print("Enter the periodic payment: ");
+     pmt=s.nextDouble();
+     System.out.print("Enter the interest: ");
+     interest=s.nextDouble();
+     System.out.print("Enter the number of payments: ");
+     numPay=s.nextDouble();
      double presentAnn=Math.pow((1+interest),(numPay-1));
      presentAnn= presentAnn-1;
      presentAnn=presentAnn/interest;
