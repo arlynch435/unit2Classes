@@ -6,7 +6,12 @@ public class NumberToString
         Scanner s=new Scanner(System.in);
         //System.out.print("Please enter an integer between 1,000 and 999,999: ");
         //String stringNum=s.next();
-        //stringNum=stringNum.replace(",","");
+        //int stringlength=stringNum.length();
+        //stringlength-=4;
+        //String firstNum=stringNum.substring(0,length);
+        //String stringNumLast3=stringNum.substring(stringNum.length()-3);
+        //stringNum=firstNum+stringNumLast3;
+        //stringNum=stringNum.replace(",",""); this line does not exist
         //System.out.println(stringNum);
         System.out.print("Please enter an integer between 1000 and 999999: ");
         String stringNum=s.next();
