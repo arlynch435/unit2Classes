@@ -36,77 +36,77 @@ public class Moon
         g2.fill(showMoon);
      if (this.phase==1)
         {
-        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,50,100,100);
+        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,87.5,12.5,37.5);
         g2.setColor(Color.BLACK);
         g2.draw(hideMoon);
         g2.fill(hideMoon);
     }
      if (this.phase==2)
         {
-        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,50,100,100);
+        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,87.5,25,50);
         g2.setColor(Color.BLACK);
         g2.draw(hideMoon);
         g2.fill(hideMoon);
     }
      if (this.phase==3)
         {
-        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,50,100,100);
+        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,87.5,100,100);
         g2.setColor(Color.BLACK);
         g2.draw(hideMoon);
         g2.fill(hideMoon);
     }
      if (this.phase==4)
         {
-        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,50,100,100);
+        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,87.5,100,100);
         g2.setColor(Color.BLACK);
         g2.draw(hideMoon);
         g2.fill(hideMoon);
     }
      if (this.phase==5)
         {
-        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,50,100,100);
+        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,87.5,100,100);
         g2.setColor(Color.BLACK);
         g2.draw(hideMoon);
         g2.fill(hideMoon);
     }
      if (this.phase==6)
         {
-        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,50,100,100);
+        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,87.5,100,100);
         g2.setColor(Color.BLACK);
         g2.draw(hideMoon);
         g2.fill(hideMoon);
     }
      if (this.phase==7)
         {
-        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,50,100,100);
+        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,87.5,100,100);
         g2.setColor(Color.BLACK);
         g2.draw(hideMoon);
         g2.fill(hideMoon);
     }
      if (this.phase==8)
         {
-        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,50,100,100);
+        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,87.5,100,100);
         g2.setColor(Color.BLACK);
         g2.draw(hideMoon);
         g2.fill(hideMoon);
     }
      if (this.phase==9)
         {
-        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,50,100,100);
+        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,87.5,100,100);
         g2.setColor(Color.BLACK);
         g2.draw(hideMoon);
         g2.fill(hideMoon);
     }
      if (this.phase==10)
         {
-        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,50,100,100);
+        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,87.5,100,100);
         g2.setColor(Color.BLACK);
         g2.draw(hideMoon);
         g2.fill(hideMoon);
     }
         if (this.phase==11)
         {
-        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,50,100,100);
+        Ellipse2D.Double hideMoon=new Ellipse2D.Double(650,87.5,100,100);
         g2.setColor(Color.BLACK);
         g2.draw(hideMoon);
         g2.fill(hideMoon);

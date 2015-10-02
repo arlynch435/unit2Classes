@@ -29,8 +29,10 @@ public class CityscapeComponent extends JComponent
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
-        Moon moon1=new Moon(3,Color.RED);
+        Moon moon1=new Moon(0,Color.RED);
         moon1.draw(g2);
+        Building building1=new Building(2,4,50);
+        building1.draw(g2);
         // invoke the draw method on each object in your Cityscape
         // ...
         
