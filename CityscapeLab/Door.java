@@ -31,7 +31,7 @@ public class Door
     public void draw(Graphics2D g2)
     {
         Rectangle body=new Rectangle(this.xLeft,this.yTop,20,40);
-        Ellipse2D.Double knob=new Ellipse2D.Double(this.xLeft+15,this.yTop-5,5,5);
+        Ellipse2D.Double knob=new Ellipse2D.Double(this.xLeft+15,this.yTop+15,5,5);
         g2.setColor(Color.GRAY);
         g2.draw(body);
         g2.fill(body);

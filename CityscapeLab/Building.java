@@ -34,14 +34,27 @@ public class Building
     public void draw(Graphics2D g2)
     {
         int xLeft= this.initial;
-        int trueWidth=this.width*50;
+        int trueWidth=this.width*45;
         int yTop= 600-((this.floors*30)+200);
-        Rectangle body=new Rectangle(xLeft,yTop,trueWidth,yTop);
-        Door door1=new Door((xLeft+(width/2)),500);
+        int height=(this.floors*30);
+        Rectangle body=new Rectangle(xLeft,yTop,trueWidth+5,height);
+        Door door1=new Door((xLeft+(trueWidth/2)),360);
         g2.setColor(Color.BLACK);
         g2.draw(body);
         g2.fill(body);
         door1.draw(g2);
+        for (int column=0;
+             column<this.width;
+             column+=1)
+        {
+          for (int i=this.floors;
+              i>1;
+              i-=1)
+          {
+            Window window1=new Window(((column*45)+5)+(this.initial),(600-((i*25)+230)));
+            window1.draw(g2);
+        }
+    }
     }
 
 }
