@@ -1,5 +1,5 @@
 import javax.swing.JFrame;
-
+import java.awt.Color;
 /**
  * Class that contains the main method for the program and creates the frame containing the component.
  * 
@@ -30,7 +30,8 @@ public class CityscapeViewer
         
         
         // a frame contains a single component; create the Cityscape component and add it to the frame
-        CityscapeComponent component = new CityscapeComponent( /* pass the user-specified value */ );
+        Moon moon1=new Moon(Color.YELLOW);
+        CityscapeComponent component = new CityscapeComponent(0,0,0,moon1);
         frame.add(component);
         
         // make the frame visible which will result in the paintComponent method being invoked on the
