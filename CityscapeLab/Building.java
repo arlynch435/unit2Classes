@@ -39,7 +39,7 @@ public class Building
         int height=(this.floors*30);
         Rectangle body=new Rectangle(xLeft,yTop,trueWidth+5,height);
         Door door1=new Door((xLeft+(trueWidth/2)),360);
-        g2.setColor(Color.BLACK);
+        g2.setColor(Color.DARK_GRAY);
         g2.draw(body);
         g2.fill(body);
         door1.draw(g2);

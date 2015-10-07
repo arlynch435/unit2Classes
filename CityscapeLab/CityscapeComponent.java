@@ -18,16 +18,20 @@ public class CityscapeComponent extends JComponent
     private int floors;
     private int width;
     private int initial;
-    private Moon moon1;
+    private Sun sun1;
+    private Skyline skyline1;
+    private int cloudCover;
     /**
      * Default constructor for objects of class Building
      */
-    public CityscapeComponent(int floors, int width, int initial,Moon moon1)
+    public CityscapeComponent(int floors, int width, int initial,Sun sun1,Skyline skyline1,int cloudCover)
     {
         this.floors=floors;
         this.width=width;
         this.initial=initial;
-        this.moon1=moon1;
+        this.sun1=sun1;
+        this.skyline1=skyline1;
+        this.cloudCover=cloudCover;
     }
 
     
@@ -44,17 +48,27 @@ public class CityscapeComponent extends JComponent
     {
         Graphics2D g2 = (Graphics2D) g;
         Random cloudLocation=new Random();
-        Rectangle skyline=new Rectangle(0,0,800,330);
-        g2.setColor(Color.BLUE);
-        g2.draw(skyline);
-        g2.fill(skyline);
-        this.moon1.draw(g2);
+        this.skyline1.draw(g2);
+        this.sun1.draw(g2);
+        for (int i=0;
+                i<this.cloudCover;
+                i+=1)
+         {
         Cloud cloud1=new Cloud(cloudLocation.nextInt(800));
         cloud1.draw(g2);
+    }
         Building building1=new Building(10,7,50);
         building1.draw(g2);
         Building building2=new Building(5,3,250);
         building2.draw(g2);
+        Building building3=new Building(8,2,650);
+        building3.draw(g2);
+        Building building4=new Building(8,4,450);
+        building4.draw(g2);
+        Building building5=new Building(4,2,150);
+        building5.draw(g2);
+        Cloud cloud2=new Cloud(cloudLocation.nextInt(800));
+        cloud2.draw(g2);
         // invoke the draw method on each object in your Cityscape
         // ...
         
@@ -65,12 +79,12 @@ public class CityscapeComponent extends JComponent
      * Animate the cityscape by updating the objects such that they appear to be animated when they are next drawn.
      *
      */
-    public void nextFrame(Graphics g)
+    public void nextFrame()
     {
         // update the objects in the cityscape so they are animated
         // ...
-        Graphics2D g2 = (Graphics2D) g;
-        this.moon1.moveLeft(g2);
+        this.sun1.moveLeft();
+        this.skyline1.moveLeft();
         
         // request that the Java Runtime repaints this component by invoking its paintComponent method
         repaint();

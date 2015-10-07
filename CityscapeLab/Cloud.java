@@ -38,7 +38,7 @@ public class Cloud
             {
                 Double circleDiam=cirlceSize.nextDouble()*100;
                 Ellipse2D circle=new Ellipse2D.Double((circleLocation.nextInt(100))+this.xPos,
-                                            circleLocation.nextInt(260),
+                                            circleLocation.nextInt(160),
                                             circleDiam,circleDiam);
                 g2.setColor(Color.WHITE);
                 g2.draw(circle);
